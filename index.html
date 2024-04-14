@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega2 - Simon Pach</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./logo.jpeg" alt="">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./carrito.jpeg" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                </div>
+            </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./proteEna.jpeg" alt="Suplemento en polvo ENA Sport True Made Whey Protein proteínas sabor vanilla ice cream en pote de 930g">
+                    <p><span>20</span>$</p>
+                </div>
+                <p class="title">Suplemento en polvo ENA Sport True Made Whey Protein proteínas sabor vanilla ice cream en pote de 930g</p>
+                <a href="" data-id="1" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./proteStar.jpeg" alt="Suplemento en polvo Star Nutrition Platinum Whey Protein Sabor Vainilla Ice Cream en Sachet de 1 Kg">
+                    <p><span>35</span>$</p>
+                </div>
+                <p class="title"> Suplemento en polvo Star Nutrition Platinum Whey Protein Sabor Vainilla Ice Cream en Sachet de 1 Kg</p>
+                <a href="" class="btn-add-cart" data-id="2">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./proteMervick.jpeg" alt="Suplemento en polvo MervickLab Whey Protein proteínas sabor vainilla en pote de 2lbs">
+                    <p><span>15.50</span>$</p>
+                </div>
+                <p class="title"> Suplemento en polvo MervickLab Whey Protein proteínas sabor vainilla en pote de 2lbs</p>
+                <a href="" data-id="3" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./proteSPX.jpeg" alt="Suplemento en polvo SPX Nutrition Max 100% Whey Protein proteína sabor strawberry american cream en pote de 1.08kg">
+                    <p><span>20.20</span>$</p>
+                </div>
+                <p class="title"> Suplemento en polvo SPX Nutrition Max 100% Whey Protein proteína sabor strawberry american cream en pote de 1.08kg    </p>
+                <a href="" data-id="4" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./creatinaEna.jpeg" alt="Suplemento en polvo ENA Sport Creatina micronizada 100% Pura en Doypack de 300g sabor neutro">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title"> Suplemento en polvo ENA Sport Creatina micronizada 100% Pura en Doypack de 300g sabor neutro</p>
+                <a href="" data-id="5" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./creatinaMervick.jpeg" alt="Mervick Lab, Creatina Monohidrato Premium, Potenciador 300g">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> Mervick Lab, Creatina Monohidrato Premium, Potenciador 300g</p>
+                <a href="" data-id="6" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./creatinaStar.jpeg" alt="Suplemento En Polvo Star Nutrition Creatine Monohydrate En Pote De 300g">
+                    <p><span>23.99</span>$</p>
+                </div>
+                <p class="title"> Suplemento En Polvo Star Nutrition Creatine Monohydrate En Pote De 300g</p>
+                <a href="" data-id="7" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./creatinaGentech.jpeg" alt="Creatina Monohidrato Gentech En Polvo Suplemento X 250 G">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> Creatina Monohidrato Gentech En Polvo Suplemento X 250 G</p>
+                <a href="" data-id="8" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./barraproteica.jpeg" alt="Iron Bar - Gentech - Barras Proteicas X20 Unidades Sin Tacc Sabor Cookies And Cream">
+                    <p><span>16</span>$</p>
+                </div>
+                <p class="title"> Iron Bar - Gentech - Barras Proteicas X20 Unidades Sin Tacc Sabor Cookies And Cream</p>
+                <a href="" data-id="9" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./barraproteicas.jpeg" alt="Prosnick Protein Bar X 10 Unidades Body Advance Sabor Dulce de leche">
+                    <p><span>17.50</span>$</p>
+                </div>
+                <p class="title"> Prosnick Protein Bar X 10 Unidades Body Advance Sabor Dulce de leche</p>
+                <a href="" data-id="10" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./barraproteicass.jpeg" alt="Infitness Maxx - Barra Proteica - 22 Gr. Proteína.">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> Infitness Maxx - Barra Proteica - 22 Gr. Proteína</p>
+                <a href="" data-id="11" class="btn-add-cart">Añadir</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+            document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="./index.js"></script>
+
+</body>
+</html>
